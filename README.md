@@ -1,3 +1,161 @@
+🛍️ Tienda Laravel - Proyecto Web
+Tienda Laravel es una aplicación web creada con Laravel 12.x y Jetstream, pensada para ser un sistema base moderno con autenticación, componentes Livewire, y un stack preparado para escalabilidad.
+
+📦 Stack Tecnológico
+Laravel 12.x
+
+Jetstream con Livewire
+
+MySQL (servidor local con Laragon)
+
+Tailwind CSS
+
+Alpine.js
+
+PHP 8.3
+
+Composer 2.8.x
+
+Node.js y NPM
+
+Laravel Mix / Vite
+
+🚀 Requisitos del sistema
+PHP >= 8.2
+
+MySQL >= 5.7 o MariaDB >= 10.2
+
+Composer
+
+Node.js y npm
+
+Git
+
+Laragon (opcional para entorno Windows)
+
+Navegador actualizado
+
+⚙️ Instalación del proyecto
+Clona el repositorio
+
+bash
+Copiar
+Editar
+git clone https://github.com/tu_usuario/laravel-tienda.git
+cd laravel-tienda
+Instala dependencias PHP
+
+bash
+Copiar
+Editar
+composer install
+Instala dependencias de frontend
+
+bash
+Copiar
+Editar
+npm install && npm run dev
+Copia y configura el entorno
+
+bash
+Copiar
+Editar
+cp .env.example .env
+Abre el archivo .env y ajusta la configuración de la base de datos:
+
+env
+Copiar
+Editar
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tienda
+DB_USERNAME=root
+DB_PASSWORD=124567
+⚠️ Nota: Cambiar la contraseña del usuario root por seguridad si se va a desplegar en producción.
+
+🔑 Generar clave de aplicación
+bash
+Copiar
+Editar
+php artisan key:generate
+🔧 Migraciones y base de datos
+Si la base de datos tienda no existe aún, créala manualmente desde phpMyAdmin o Workbench.
+
+Luego corre las migraciones:
+
+bash
+Copiar
+Editar
+php artisan migrate
+🧩 Jetstream y autenticación
+Este proyecto utiliza Laravel Jetstream con Livewire, lo cual incluye:
+
+Registro y login
+
+Verificación de correo
+
+Recuperación de contraseña
+
+Gestión de sesiones
+
+API tokens (con Laravel Sanctum)
+
+Perfil de usuario
+
+Equipos (opcional)
+
+🌐 URL de desarrollo
+Con Laragon:
+
+arduino
+Copiar
+Editar
+http://tienda.test
+O con el servidor embebido de Laravel:
+
+bash
+Copiar
+Editar
+php artisan serve
+✅ Comandos útiles
+bash
+Copiar
+Editar
+# Iniciar servidor local
+php artisan serve
+
+# Ver rutas registradas
+php artisan route:list
+
+# Compilar assets
+npm run dev
+
+# Ver errores en consola Laravel
+php artisan log:clear
+🔒 Seguridad
+Actualmente se usa la contraseña por defecto del usuario root (124567) para MySQL.
+
+IMPORTANTE: No usar este usuario en producción. Se recomienda crear un nuevo usuario con permisos específicos.
+
+📂 Estructura inicial
+pgsql
+Copiar
+Editar
+.
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+├── .env
+└── README.md
+🙌 Créditos
+Este proyecto fue creado por Daniel Alejandro Vargas Uzuriaga, con el objetivo de construir una base sólida y escalable para futuros desarrollos web en Laravel.
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
